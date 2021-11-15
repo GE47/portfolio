@@ -42,7 +42,6 @@ const NavBar: React.FC = () => {
         >
           <NavLink href="/">Home</NavLink>
           <NavLink href="/projects">Projects</NavLink>
-          <NavLink href="/contact">Contact Me</NavLink>
         </Stack>
 
         <Box display="flex">
@@ -60,9 +59,6 @@ const NavBar: React.FC = () => {
                 </Link>
                 <Link href="/projects" passHref>
                   <MenuItem as={ChakraLink}>Projects</MenuItem>
-                </Link>
-                <Link href="/contact" passHref>
-                  <MenuItem as={ChakraLink}>Contact Me</MenuItem>
                 </Link>
               </MenuList>
             </Menu>
