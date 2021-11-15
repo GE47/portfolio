@@ -22,7 +22,7 @@ const colors = {
 
 const config: ThemeConfig = {
   initialColorMode: "dark",
-  useSystemColorMode: true,
+  useSystemColorMode: false,
 };
 
 export { fonts, config, styles, colors };
