@@ -17,7 +17,7 @@ const NavLink: React.FC<{ href: string }> = ({ href, children }) => {
     }
   }, [href, pathname]);
 
-  const bg = useColorModeValue("gray.700", "gray.100");
+  const bg = useColorModeValue("gray.700", "white");
   const color = useColorModeValue("white", "black");
 
   return (
