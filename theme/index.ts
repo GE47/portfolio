@@ -1,14 +1,14 @@
 import { extendTheme } from "@chakra-ui/react";
 
 import { fonts, config, styles, colors } from "./styles";
-import Heading from "./components/Heading";
+import components from "./components";
 
 const overrides = {
   styles,
   fonts,
   config,
   colors,
-  components: { Heading },
+  components,
 };
 
 const theme = extendTheme(overrides);
