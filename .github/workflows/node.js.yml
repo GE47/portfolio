@@ -24,6 +24,7 @@ jobs:
       - run: yarn install --immutable --immutable-cache --check-cache
       - run: yarn run build
       - run: yarn run export
+      - run: touch out/.nojekyll
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.6
