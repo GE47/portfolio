@@ -2,6 +2,7 @@ import { Flex } from "@chakra-ui/layout";
 import { Image, Text } from "@chakra-ui/react";
 import Link from "next/link";
 
+import { prefix } from "../utils/constants";
 import PageAnimation from "../components/PageAnimation";
 
 interface IProps {
@@ -22,7 +23,7 @@ const ProjectItem: React.FC<IProps> = ({ title, cover, id }) => {
           style={{ gap: 10 }}
         >
           <Image
-            src={cover}
+            src={prefix + cover}
             alt={`${title}'s image`}
             w={{ base: "300px", md: "400px" }}
             h="250px"
