@@ -24,7 +24,7 @@ const projects = [
       "/assets/portfolio/portfolio-home.png",
       "/assets/portfolio/portfolio-projects.png",
     ],
-    demo: "",
+    demo: "https://ge47.github.io/portfolio",
     code: "https://github.com/GE47/portfolio",
     techs: ["Next js", "TypeScript", "Chakra UI", "Framer Motion"],
   },
