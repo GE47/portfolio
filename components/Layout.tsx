@@ -9,7 +9,10 @@ const Layout: React.FC = ({ children }) => {
     <Box as="main" height="100vh" display="flex" flexDir="column">
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Alhasan's homepage" />
+        <meta
+          name="description"
+          content="Alhasan Ali - Front End Web Developer."
+        />
         <meta name="author" content="Alhasan Ali" />
         <title>Alhasan Ali</title>
       </Head>
