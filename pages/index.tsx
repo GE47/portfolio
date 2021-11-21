@@ -29,9 +29,9 @@ const Home: NextPage = () => {
     );
   };
 
-  const handleCopyEmail = () => {
-    const email = "Alhassan.Ali.Alrubaye@gmail.com";
+  const email = "Alhassan.Ali.Alrubaye@gmail.com";
 
+  const handleCopyEmail = () => {
     navigator.clipboard.writeText(email);
 
     toast({
@@ -159,7 +159,7 @@ const Home: NextPage = () => {
 
           <LinkButton
             Icon={CopyIcon}
-            text="Email"
+            text={`${email}`}
             onLinkClicked={handleCopyEmail}
           />
 
