@@ -46,7 +46,7 @@ const NavBar: React.FC = () => {
 
         <Box display="flex">
           <Box display={{ base: "inline-block", md: "none" }} mr="2">
-            <Menu isLazy>
+            <Menu autoSelect={false} placement="auto">
               <MenuButton
                 as={IconButton}
                 aria-label="Options"
@@ -54,12 +54,8 @@ const NavBar: React.FC = () => {
                 variant="outline"
               />
               <MenuList>
-                <Link href="/" passHref>
-                  <MenuItem as={ChakraLink}>Home</MenuItem>
-                </Link>
-                <Link href="/projects" passHref>
-                  <MenuItem as={ChakraLink}>Projects</MenuItem>
-                </Link>
+                <NavMenuItem href="/" title="Home" />
+                <NavMenuItem href="/projects" title="Projects" />
               </MenuList>
             </Menu>
           </Box>
@@ -72,3 +68,18 @@ const NavBar: React.FC = () => {
 };
 
 export default NavBar;
+
+const NavMenuItem: React.FC<{ href: string; title: string }> = ({
+  href,
+  title,
+}) => {
+  return (
+    <Link href={href} passHref>
+      <MenuItem>
+        <ChakraLink textAlign="center" w="full">
+          {title}
+        </ChakraLink>
+      </MenuItem>
+    </Link>
+  );
+};
