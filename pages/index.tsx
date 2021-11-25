@@ -11,7 +11,6 @@ import {
 } from "@chakra-ui/react";
 import { ExternalLinkIcon, CopyIcon, StarIcon } from "@chakra-ui/icons";
 
-import { prefix } from "../utils/constants";
 import PageAnimation from "../components/PageAnimation";
 import LinkButton from "../components/LinkButton";
 
@@ -64,7 +63,7 @@ const Home: NextPage = () => {
             overflow="hidden"
           >
             <Image
-              src={prefix + "/assets/pfp.jpg"}
+              src={"/assets/pfp.jpg"}
               alt="Profile Picture"
               display="inline-block"
               w="150px"

@@ -4,7 +4,6 @@ import { ExternalLinkIcon, ChevronLeftIcon } from "@chakra-ui/icons";
 import Link from "next/link";
 import { GetStaticProps, NextPage } from "next";
 
-import { prefix } from "../../utils/constants";
 import projectsData from "../../projects";
 import PageAnimation from "../../components/PageAnimation";
 import LinkButton from "../../components/LinkButton";
@@ -104,7 +103,7 @@ const ProjectInfo: NextPage<IProps> = ({ info }) => {
                 objectFit="fill"
                 w="300px"
                 h="200px"
-                src={prefix + image}
+                src={image}
                 key={index}
                 alt={`${info.title}'s image ${index}`}
               />
