@@ -1,6 +1,7 @@
 import type { AppProps } from "next/app";
 import { ChakraProvider } from "@chakra-ui/react";
 import "@fontsource/poppins";
+import "focus-visible/dist/focus-visible";
 
 import theme from "../theme";
 import Layout from "../components/Layout";
