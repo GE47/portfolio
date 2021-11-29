@@ -18,7 +18,7 @@ const NavBar: React.FC = () => {
   const navColor = useColorModeValue("lightWhite", "darkBlack");
 
   return (
-    <Box as="nav" w="full" position="fixed" bg={navColor}>
+    <Box as="nav" w="full" position="fixed" bg={navColor} zIndex={10}>
       <Container
         maxW="container.lg"
         p="4"
