@@ -3,7 +3,6 @@ import Link from "next/link";
 import { Box, Text, List, ListItem, ListIcon, Flex } from "@chakra-ui/layout";
 import {
   Heading,
-  Image,
   Divider,
   useToast,
   useColorModeValue,
@@ -60,7 +59,9 @@ const Home: NextPage = () => {
           <Box
             mt={{ base: 4, md: 0 }}
             ml={{ md: 5 }}
-            textAlign="center"
+            display={{ base: "flex", md: "block" }}
+            justifyContent="center"
+            alignItems="center"
             overflow="hidden"
           >
             <AppImage
