@@ -13,6 +13,7 @@ import { ExternalLinkIcon, CopyIcon, StarIcon } from "@chakra-ui/icons";
 
 import PageAnimation from "../components/PageAnimation";
 import LinkButton from "../components/LinkButton";
+import AppImage from "../components/AppImage";
 
 const Home: NextPage = () => {
   const iconColor = useColorModeValue("blue.900", "blue.600");
@@ -62,16 +63,14 @@ const Home: NextPage = () => {
             textAlign="center"
             overflow="hidden"
           >
-            <Image
+            <AppImage
               src={"/assets/pfp.jpg"}
               alt="Profile Picture"
               display="inline-block"
               w="150px"
               h="150px"
-              objectFit="cover"
               borderRadius="full"
               borderWidth={2}
-              borderStyle="solid"
               borderColor={imageBorder}
             />
           </Box>

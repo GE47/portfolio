@@ -7,6 +7,7 @@ import { GetStaticProps, NextPage } from "next";
 import projectsData from "../../projects";
 import PageAnimation from "../../components/PageAnimation";
 import LinkButton from "../../components/LinkButton";
+import AppImage from "../../components/AppImage";
 
 interface IProps {
   info: {
@@ -96,11 +97,8 @@ const ProjectInfo: NextPage<IProps> = ({ info }) => {
             ml={{ base: 0, md: 5 }}
           >
             {info.images.map((image, index) => (
-              <Image
-                borderRadius="lg"
-                borderStyle="solid"
+              <AppImage
                 borderWidth="thin"
-                objectFit="fill"
                 w="300px"
                 h="200px"
                 src={image}

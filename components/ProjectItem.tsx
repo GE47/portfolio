@@ -3,6 +3,7 @@ import { Image, Text } from "@chakra-ui/react";
 import Link from "next/link";
 
 import PageAnimation from "../components/PageAnimation";
+import AppImage from "./AppImage";
 
 interface IProps {
   title: string;
@@ -21,14 +22,12 @@ const ProjectItem: React.FC<IProps> = ({ title, cover, id }) => {
           cursor="pointer"
           style={{ gap: 10 }}
         >
-          <Image
+          <AppImage
             src={cover}
             alt={`${title}'s image`}
-            w={{ base: "300px", md: "400px" }}
+            w={{ base: "300px", md: "330px" }}
             h="250px"
-            objectFit="fill"
-            borderRadius="lg"
-            borderStyle="solid"
+            objectFit="cover"
             borderWidth="thin"
           />
           <Text fontSize="20">{title}</Text>
