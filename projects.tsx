@@ -1,19 +1,18 @@
 const projects = [
   {
-    title: "EduCards",
+    title: "FilmzInfoz",
     id: "1",
-    description:
-      "A website that helps people through their learning journey, by allowing them to create, review & share flashcards.",
-    cover: "/assets/eduCards/edu-home.png",
+    description: "A website that displays information about movies and actors, the data is provided from the TMDB API.",
+    cover: "/assets/filmzinfoz/filmzinfoz-1.png",
     images: [
-      "/assets/eduCards/edu-main.png",
-      "/assets/eduCards/edu-new.png",
-      "/assets/eduCards/edu-review.png",
-      "/assets/eduCards/edu-details.png",
+      "/assets/filmzinfoz/filmzinfoz-1.png",
+      "/assets/filmzinfoz/filmzinfoz-2.png",
+      "/assets/filmzinfoz/filmzinfoz-3.png",
+      "/assets/filmzinfoz/filmzinfoz-4.png",
     ],
-    demo: "https://rbc-flashcards.netlify.app/",
-    code: "https://github.com/GE47/capstone-react-flashcards",
-    techs: ["Next js", "Redux js", "Firebase", "TailwindCSS", "TipTap"],
+    demo: "https://adoring-ardinghelli-7f09c8.netlify.app/",
+    code: "https://github.com/GE47/filmz-infoz",
+    techs: ["React js", "TypeScript", "Redux Toolkit", "Chakra UI", "Firebase"],
   },
   {
     title: "Portfolio",
