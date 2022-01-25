@@ -127,9 +127,11 @@ const Home: NextPage = () => {
           <Heading variant="title">Skills</Heading>
           <List spacing={3}>
             <ListContent text="JavaScript" />
+            <ListContent text="TypeScript" />
             <ListContent text="React js" />
             <ListContent text="Next js" />
             <ListContent text="Redux js" />
+            <ListContent text="Redux Toolkit" />
             <ListContent text="Firebase" />
             <ListContent text="HTML & CSS" />
             <ListContent text="TailwindCSS" />
