@@ -1,8 +1,9 @@
 const projects = [
   {
     title: "FilmzInfoz",
-    id: "1",
-    description: "A website that displays information about movies and actors, the data is provided from the TMDB API.",
+    id: "filmzinfo",
+    description:
+      "A website that displays information about movies and actors, the data is provided from the TMDB API.",
     cover: "/assets/filmzinfoz/filmzinfoz-1.png",
     images: [
       "/assets/filmzinfoz/filmzinfoz-1.png",
@@ -16,14 +17,11 @@ const projects = [
   },
   {
     title: "Portfolio",
-    id: "2",
-    description: "My personal portfolio website",
+    id: "portfolio",
+    description:
+      "Here you can access the GitHub repository for this portfolio website.",
     cover: "/assets/portfolio/portfolio-home.png",
-    images: [
-      "/assets/portfolio/portfolio-home.png",
-      "/assets/portfolio/portfolio-projects.png",
-    ],
-    demo: "https://www.alhasan-ali.com",
+    images: [],
     code: "https://github.com/GE47/portfolio",
     techs: ["Next js", "TypeScript", "Chakra UI", "Framer Motion"],
   },
