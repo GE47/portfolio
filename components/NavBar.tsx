@@ -53,7 +53,7 @@ const NavBar: React.FC = () => {
                 icon={<HamburgerIcon h="6" w="6" />}
                 variant="outline"
               />
-              <MenuList>
+              <MenuList bg={navColor}>
                 <NavMenuItem href="/" title="Home" />
                 <NavMenuItem href="/projects" title="Projects" />
               </MenuList>
