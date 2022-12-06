@@ -1,5 +1,5 @@
 import { Box, Heading, Text, Link as ChakraLink } from "@chakra-ui/layout";
-import { SimpleGrid, Image, useColorModeValue } from "@chakra-ui/react";
+import { SimpleGrid, useColorModeValue } from "@chakra-ui/react";
 import { ExternalLinkIcon, ChevronLeftIcon } from "@chakra-ui/icons";
 import Link from "next/link";
 import { GetStaticProps, NextPage } from "next";
@@ -26,7 +26,7 @@ const ProjectInfo: NextPage<IProps> = ({ info }) => {
 
   return (
     <PageAnimation>
-      <Box pt="5" minH="80vh">
+      <Box pt="5" minH={info.images.length > 0 ? "80vh" : "60vh"}>
         <Box display="flex" alignItems="center" mb="5">
           <Link href="/projects" passHref>
             <ChakraLink display="flex" alignItems="center" fontSize="3xl">
@@ -76,18 +76,22 @@ const ProjectInfo: NextPage<IProps> = ({ info }) => {
           style={{ gap: 20 }}
           mt="5"
         >
-          <LinkButton
-            Icon={ExternalLinkIcon}
-            text="Code"
-            href={info.code}
-            target="_blank"
-          />
-          <LinkButton
-            Icon={ExternalLinkIcon}
-            text="Demo"
-            href={info.demo}
-            target="_blank"
-          />
+          {info.code && (
+            <LinkButton
+              Icon={ExternalLinkIcon}
+              text="Code"
+              href={info.code}
+              target="_blank"
+            />
+          )}
+          {info.demo && (
+            <LinkButton
+              Icon={ExternalLinkIcon}
+              text="Demo"
+              href={info.demo}
+              target="_blank"
+            />
+          )}
         </Box>
         <Box display="flex" alignItems="center" justifyContent="center">
           <SimpleGrid

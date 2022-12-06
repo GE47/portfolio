@@ -9,17 +9,17 @@ const Projects: NextPage = () => {
   return (
     <PageAnimation>
       <Box
-        py="10"
-        minH="80vh"
+        pt={{ base: "10", md: "0" }}
+        minH="60vh"
         display="flex"
         flexDir="column"
         justifyContent="center"
       >
         <SimpleGrid columns={{ base: 1, md: 2 }} gap={5}>
-          {projectsData.map((project) => (
+          {projectsData.map((project, index) => (
             <ProjectItem
               id={project.id}
-              key={project.id}
+              key={index}
               title={project.title}
               cover={project.cover}
             />
