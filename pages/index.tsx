@@ -51,10 +51,10 @@ const Home: NextPage = () => {
           alignItems="center"
         >
           <Box>
-            <Heading as="h2" fontSize="3xl">
+            <Heading as="h2" size="xl">
               Hello, I&apos;m Alhasan Ali
             </Heading>
-            <Text fontSize="xl">A Front-End Web Developer</Text>
+            <Text fontSize="xl">a Full-Stack Web Developer</Text>
           </Box>
           <Box
             mt={{ base: 4, md: 0 }}
@@ -80,25 +80,51 @@ const Home: NextPage = () => {
         </Box>
 
         <Box mt="5">
-          <Heading variant="title">About Me</Heading>
+          <Heading as="h2" size="md">
+            About Me
+          </Heading>
 
-          <Text mb="2">
-            A front-end web developer who enjoys working in a team environment.
-            Passionate about creating efficient and easy-to-use applications.
+          <Text my="2" mx="2">
+            A web developer who enjoys working in a team environment. Passionate
+            about creating efficient and easy-to-use applications.
           </Text>
 
-          <Flex alignItems="center">
-            <Heading fontSize="15" mx="5">
-              2020
+          <Heading size="md" as="h3">
+            Work Experience
+          </Heading>
+          <Flex alignItems="center" my="2">
+            <Heading fontSize="15" mx="2">
+              Jun 2022 - Nov 2022
             </Heading>
             <Text>
-              Received a bachelor&apos;s degree in Information Technology from
-              the University of Babylon.
+              Software developer at
+              <Link
+                href="https://www.linkedin.com/company/arab-payment-services"
+                passHref
+              >
+                <ChakraLink
+                  target="_blank"
+                  cursor="pointer"
+                  textDecor="underline"
+                  color="blue.500"
+                  px="5px"
+                  display="inline-flex"
+                  alignItems="center"
+                >
+                  <Text me="1" as="span">
+                    APS
+                  </Text>
+                  <ExternalLinkIcon />
+                </ChakraLink>
+              </Link>
             </Text>
           </Flex>
 
+          <Heading size="md" as="h3">
+            Education
+          </Heading>
           <Flex alignItems="center" my="2">
-            <Heading fontSize="15" mx="5">
+            <Heading fontSize="15" mx="2">
               2021
             </Heading>
             <Text>
@@ -113,11 +139,23 @@ const Home: NextPage = () => {
                   display="inline-flex"
                   alignItems="center"
                 >
-                  <span>Re:Coded</span>
+                  <Text me="1" as="span">
+                    Re:Coded
+                  </Text>
                   <ExternalLinkIcon />
                 </ChakraLink>
               </Link>
               React Web Development Bootcamp.
+            </Text>
+          </Flex>
+
+          <Flex alignItems="center">
+            <Heading fontSize="15" mx="2">
+              2020
+            </Heading>
+            <Text>
+              Received a bachelor&apos;s degree in Information Technology from
+              the University of Babylon.
             </Text>
           </Flex>
         </Box>
@@ -132,10 +170,14 @@ const Home: NextPage = () => {
             <ListContent text="Next js" />
             <ListContent text="Redux js" />
             <ListContent text="Redux Toolkit" />
-            <ListContent text="Firebase" />
             <ListContent text="HTML & CSS" />
             <ListContent text="TailwindCSS" />
+            <ListContent text="Bootstrap" />
             <ListContent text="Chakra UI" />
+            <ListContent text="Node & Express js" />
+            <ListContent text="Firebase" />
+            <ListContent text="SQL" />
+            <ListContent text="MongoDB" />
             <ListContent text="Git & GitHub" />
           </List>
         </Box>
@@ -144,7 +186,7 @@ const Home: NextPage = () => {
 
         <Box mt="5">
           <Heading variant="title">My Hobbies</Heading>
-          <Text>
+          <Text mx="2">
             Music, Anime & Manga, Drawing, Learning Japanese, Playing Guitar.
           </Text>
         </Box>
